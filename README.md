@@ -1,8 +1,6 @@
 <div align="center">
 
 <a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/script_to_create_and_delete_repositories?style=plastic)</a>
-![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/script_to_create_and_delete_repositories?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/script_to_create_and_delete_repositories?color=yellow&style=plastic)
 
 </div>
 
