@@ -340,7 +340,7 @@ create_repository() {
   clear
 
   echo
-  echo $'\U2705' $project_name repository created successfully!
+  echo $'\033[0;32m\U2713\033[0m' $project_name "repository created successfully!"
 
   echo
   echo $'\U231B' 'Close terminal in 20 seconds... to cancel press ESC or ENTER!!!'
@@ -369,14 +369,19 @@ delete_repository() {
     resositories="${UI_WIDGET_RC[@]}"
 
     del_local_repo() {
+        echo $'\U231B' "Deleting local repository..."
         cd d:/www
         rm -rf $dele_repo
         echo
-        echo $'\U2705' $project_name Local repository successfully deleted!
+        echo Local:
+        echo $'\033[0;32m\U2713\033[0m' Deleted repository d:/www/$dele_repo
+        echo
     }
 
     del_remote_repo() {
+        echo Remote:
         gh repo delete $dele_repo --confirm
+        echo
     }
 
     if [[ $resositories = 0 ]]; then
