@@ -84,6 +84,7 @@ git clone https://github.com/everton-dgn/script_to_create_and_delete_repositorie
   source ~/.functions_bash.sh
   ```
 - Reopen the Bash terminal and run the command `create_repository` or `delete_repository`.
+- Note: If you are using the zsh terminal, the settings must still be made in the .bashrc file and to trigger the script you need to run in the terminal: `bash`. Only then use the script commands in the terminal.
 
 ## Creating local and remote repository on GitHub
 
