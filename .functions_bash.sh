@@ -311,6 +311,7 @@ create_repository() {
   options=(
     "None."
     "Nextjs, Styled-Components, Redux Toolkit, PWA and Typescript."
+    "React, Webpack and Typescript."
     "React, Webpack, Styled-Components, Redux Toolkit and Typescript."
     "React, Vite, Styled-Components, Redux Toolkit and Typescript."
     )
@@ -321,8 +322,10 @@ create_repository() {
   if [[ $use_template -eq 1 ]]; then
     use_template="--template next_styled_components_redux_tlk_pwa_boilerplate"
   elif [[ $use_template -eq 2 ]]; then
-    use_template="--template react_webpack_styled_components_redux_tlk_boilerplate"
+    use_template="--template react_webpack_simplified"
   elif [[ $use_template -eq 3 ]]; then
+    use_template="--template react_webpack_styled_components_redux_tlk_boilerplate"
+  elif [[ $use_template -eq 4 ]]; then
     use_template="--template react_vite_styled_components_redux_tlk_boilerplate"
   else
     use_template=''
